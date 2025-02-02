@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="loading-animation">
+        <div class="loading-spinner"></div>
+    </div>
+
+
+    <div class="game-container">
+        <h1 class="game-title">Color Game</h1>
+        <p class="game-instructions" data-testid="gameInstructions">Guess the correct color!</p>
+
+        <div class="color-box" data-testid="colorBox"></div>
+
+        <div class="color-options">
+            <button class="color-option" data-testid="colorOption"></button>
+            <button class="color-option" data-testid="colorOption"></button>
+            <button class="color-option" data-testid="colorOption"></button>
+            <button class="color-option" data-testid="colorOption"></button>
+            <button class="color-option" data-testid="colorOption"></button>
+            <button class="color-option" data-testid="colorOption"></button>
+        </div>
+
+        <p class="game-status" data-testid="gameStatus">Make your guess!</p>
+
+        <p class="score" data-testid="score">Score: <span id="scoreValue">0</span></p>
+
+        <button class="new-game-button" data-testid="newGameButton">New Game</button>
+    </div>
+
+    <div id="toast" class="toast">
+        <span class="toast-message">Thanks for reaching out!</span>
+        <button class="toast-close">&times;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
