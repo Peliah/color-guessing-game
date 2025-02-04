@@ -4,7 +4,6 @@
   Description: Script for the Neobrutalism-style Color Game.
 */
 
-// Simulate loading delay
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.querySelector('.loading-animation').style.display = 'none';
@@ -121,7 +120,7 @@ function showToast(message, gifSrc) {
 
     setTimeout(() => {
         hideToast();
-    }, 3000);
+    }, 1500);
 }
 
 function hideToast() {
