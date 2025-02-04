@@ -224,7 +224,7 @@ body {
 /* Toast Notification */
 .toast {
     position: fixed;
-    bottom: 20px;
+    bottom: 40%;
     right: 20px;
     background-color: #fff;
     border: 3px solid #000;
@@ -240,16 +240,21 @@ body {
     z-index: 1000;
 }
 
+.toast div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .toast.show {
     opacity: 1;
     transform: translateY(0);
 }
 
 .toast img {
-    width: 40px;
-    height: 40px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 2px solid #000;
 }
 
 .toast-message {
