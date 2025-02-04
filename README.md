@@ -1,6 +1,5 @@
 ### README.md
 
-```markdown
 # Color Guessing Game
 
 A fun and interactive color guessing game designed in the **Neobrutalism style**. The game challenges players to match the target color from a set of options, with dynamic feedback and animations.
